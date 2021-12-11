@@ -251,7 +251,7 @@ Number of idle chars in TX channel used for tool communication. Only used, when 
 
 Tool voltage set at the beginning of the UR program. Only used, when `use_tool_communication` is set to true.
 
-##### urscript_file (default: "$(find ur_robot_driver)/resources/ros_control.urscript")
+##### urscript_file (default: "$(find ur_client_library)/resources/external_control.urscript")
 
 Path to URScript that will be sent to the robot and that forms the main control program.
 
@@ -776,7 +776,7 @@ Service to set any of the robot's IOs
 
 Set the speed slider fraction used by the robot's execution. Values should be between 0 and 1. Only set this smaller than 1 if you are using the scaled controllers (as by default) or you know what you're doing. Using this with other controllers might lead to unexpected behaviors.
  
-#### set_payload (ur_msgs/SetPayload)
+##### set_payload (ur_msgs/SetPayload)
 
 Setup the mounted payload through a ROS service
 
